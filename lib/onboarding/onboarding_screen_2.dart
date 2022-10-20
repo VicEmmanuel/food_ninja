@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:food_ninja/auth/sign_in_screen.dart';
 import 'package:food_ninja/constants/app_colors.dart';
 import 'package:food_ninja/constants/assets_string.dart';
+import 'package:food_ninja/utils/navigators.dart';
 import 'package:food_ninja/utils/styles.dart';
 import 'package:food_ninja/widgets/buttons.dart';
 
@@ -50,7 +52,9 @@ class _OnboardingScreen2State extends State<OnboardingScreen2> {
                 SizedBox(
                   height: deviceH*0.05,
                 ),
-                AppSmallButtons(title: 'Next', onTap: () {})
+                AppSmallButtons(title: 'Next', onTap: () {
+                  navigatePush(context, SignInScreen());
+                })
               ],
             ),
           )

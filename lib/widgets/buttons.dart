@@ -14,7 +14,7 @@ class AppSmallButtons extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: deviceH*0.065,
+        height: deviceH*0.07,
         width: deviceW*0.35,
         decoration: BoxDecoration(
             // color: Colors.red,
